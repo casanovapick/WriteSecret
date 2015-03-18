@@ -19,6 +19,10 @@
         <activity
             android:name=".ConfirmActivity"
             android:label="@string/title_activity_confirm" >
+            <intent-filter>
+                <action android:name="ais.co.th.writesecret.ConfirmActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
     </application>
 

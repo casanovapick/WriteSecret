@@ -13,12 +13,39 @@
         android:ems="10"
         android:layout_centerHorizontal="true" />
 
-    <Button
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SAVE"
-        android:id="@+id/btn_save"
         android:layout_below="@+id/input_sc"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp" />
+        android:layout_marginTop="64dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log out"
+            android:id="@+id/btn_logout"
+            android:layout_alignTop="@+id/btn_login"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/btn_login"
+
+            android:layout_below="@+id/input_sc"
+            android:layout_toLeftOf="@+id/btn_logout"
+            android:layout_toStartOf="@+id/btn_logout" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="User Name"
+        android:layout_above="@+id/input_sc"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
